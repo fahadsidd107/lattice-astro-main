@@ -1,0 +1,7 @@
+---
+import data from "../data/portfolio.json";
+---
+<section class="section experience" id="experience" aria-labelledby="exp-title">
+  <header class="section-head"><p class="eyebrow">Experience / 03</p><h2 id="exp-title">Five years of <span>shipping.</span></h2><p>A progression from hands-on implementation to owning systems, delivery and the technical decisions around them.</p></header>
+  <ol class="timeline">{data.experience.map((job,i) => <li tabindex="0"><div class="timeline-no mono">{String(i+1).padStart(2,"0")}</div><div><time class="mono">{job.period}</time><h3>{job.company}</h3></div><div><p class="role">{job.role}</p><p class="mono">{job.location}</p></div><p class="timeline-summary">{job.summary}</p><span aria-hidden="true">↗</span></li>)}</ol>
+</section>

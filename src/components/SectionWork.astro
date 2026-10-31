@@ -1,0 +1,25 @@
+---
+import data from "../data/portfolio.json";
+---
+<section class="section work" id="work" aria-labelledby="work-title" data-project-root>
+  <header class="section-head"><p class="eyebrow">Selected systems / 01</p><h2 id="work-title">Work across the <span>whole stack.</span></h2><p>Five systems—production work and independently developed products—selected for the architecture and product questions behind them.</p></header>
+  <div class="project-stage">
+    <div class="project-visual frame-box" data-project-visual>
+      <div class="visual-grid" aria-hidden="true"></div><span class="project-code mono" data-project-code>{data.projects[0].code}</span><span class="visual-status mono" data-project-status>{data.projects[0].status}</span>
+    </div>
+    <article class="project-copy frame-box" aria-live="polite">
+      <div class="project-index mono"><span data-project-index>01</span> / 05</div>
+      <p class="project-meta mono" data-project-meta>{data.projects[0].year} · {data.projects[0].discipline}</p>
+      <h3 data-project-name>{data.projects[0].name}</h3>
+      <p data-project-summary>{data.projects[0].summary}</p><p class="muted" data-project-detail>{data.projects[0].detail}</p>
+      <ul class="stack" data-project-stack>{data.projects[0].stack.map((item) => <li>{item}</li>)}</ul>
+      <div class="project-links" data-project-links></div>
+    </article>
+  </div>
+  <div class="project-nav">
+    <button class="frame-box" type="button" data-project-prev aria-label="Previous project">←</button>
+    <div class="project-tabs-shell"><div class="project-tabs" role="tablist" aria-label="Select project">{data.projects.map((project, i) => <button type="button" role="tab" aria-selected={i === 0 ? "true" : "false"} data-project-tab={i}><span>{String(i+1).padStart(2,"0")}</span>{project.name}</button>)}</div><span class="project-scroll-cue mono" aria-hidden="true">Swipe projects →</span></div>
+    <button class="frame-box" type="button" data-project-next aria-label="Next project">→</button>
+  </div>
+  <script type="application/json" id="portfolio-projects" set:html={JSON.stringify(data.projects)}></script>
+</section>

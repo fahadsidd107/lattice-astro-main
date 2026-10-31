@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {"name":"Plotlyst","code":"PL","status":"In development","year":"2026","discipline":"AI discovery","stack":["React","Go / Gin","MongoDB","LangChainGo","OpenAI API"],"summary":"A natural-language discovery layer for film and television, bringing recommendations, watchlists, rankings and actor context into one exploratory product.","detail":"Built around a mock-data strategy so product flows and recommendation behavior can evolve independently of external data providers.","githubUrl":"","liveUrl":"","image":"","mobileImage":"","accent":"teal"},
+    {"name":"PitchPulse","code":"PP","status":"In development","year":"2026","discipline":"Live intelligence","stack":["Vue.js","Rust","Kafka","Redis","RabbitMQ"],"summary":"A live football intelligence system that interprets simulated match events through a real-time pitch, tactical context and conversational questions.","detail":"An event-driven architecture turns raw match signals into AI-assisted explanations without presenting simulated data as live production coverage.","githubUrl":"","liveUrl":"","image":"","mobileImage":"","accent":"amber"},
+    {"name":"Anue","code":"AN","status":"Production system","year":"2025—Now","discipline":"Education SaaS","stack":["Spring Boot","Django","Next.js","PostgreSQL","AWS"],"summary":"A professional education platform spanning course discovery, matching, applications, commerce and payment integrations.","detail":"I own technical decisions and delivery across product, backend and infrastructure, while supporting production operations, mentoring and hiring.","githubUrl":"","liveUrl":"","image":"","mobileImage":"","accent":"teal"},
+    {"name":"Mentora AI","code":"MA","status":"Independent product","year":"2025","discipline":"Conversational learning","stack":["Next.js","TypeScript","Supabase","Vapi","Sentry"],"summary":"A real-time conversational tutoring SaaS with configurable AI tutors, voice sessions and subscription-aware product flows.","detail":"Profiles, history, bookmarks and discovery form a coherent learning workspace around live voice interaction.","githubUrl":"","liveUrl":"","image":"","mobileImage":"","accent":"amber"},
+    {"name":"FaultLine","code":"FL","status":"Concept / in development","year":"2026","discipline":"Reliability engineering","stack":["Angular","NestJS","Kafka","Kubernetes","OpenTelemetry","LLM / RAG"],"summary":"An AI-assisted chaos engineering platform for safely exploring failure behavior across distributed systems and microservices.","detail":"The product direction covers controlled experiments, dependency visualization, recovery monitoring, replay, reliability regression testing and intelligent diagnosis across multi-cloud Kubernetes environments.","githubUrl":"","liveUrl":"","image":"","mobileImage":"","accent":"teal"}
+  ],
+  "capabilities": [
+    {"title":"Full-stack","second":"product engineering","description":"Product systems from interaction model to data layer: React, Next.js, Angular, TypeScript and pragmatic backend integration.","signal":"PRODUCT / 01"},
+    {"title":"Backend & API","second":"architecture","description":"Service boundaries, REST and GraphQL APIs, relational data and production-grade Java/Spring Boot, NestJS and Django systems.","signal":"SYSTEM / 02"},
+    {"title":"Cloud, DevOps","second":"& operations","description":"AWS delivery, Docker, CI/CD, observability and the operational discipline needed to keep software dependable after launch.","signal":"OPERATE / 03"},
+    {"title":"Applied AI","second":"LLM & RAG","description":"Focused LLM and retrieval integrations that make product workflows more useful without hiding uncertainty or overclaiming automation.","signal":"INTELLIGENCE / 04"},
+    {"title":"Technical","second":"leadership","description":"Technical direction, delivery ownership, code review, mentoring and hiring—connecting product decisions to maintainable implementation.","signal":"LEAD / 05"}
+  ],
+  "experience": [
+    {"period":"MAR 2025 — NOW","company":"Anue Education Solutions GmbH","role":"Technical Lead & Full-Stack Developer","location":"Frankfurt / Remote","summary":"Leading technical decisions and end-to-end delivery for a professional education SaaS across Spring Boot, Django, Next.js, PostgreSQL and AWS."},
+    {"period":"SEP 2023 — APR 2024","company":"MSE Technology","role":"Software Engineer","location":"Karachi","summary":"Delivered full-stack business applications and backend integrations with a focus on dependable APIs, data flows and maintainable delivery."},
+    {"period":"JUN — AUG 2023","company":"Ashtar Global Solutions / Tumi Labs","role":"Software Engineer","location":"Remote","summary":"Built product functionality across the web stack in a fast-moving engineering environment, translating requirements into shipped features."},
+    {"period":"FEB — MAY 2023","company":"Sidat Technologies","role":"Software Engineer","location":"Karachi","summary":"Contributed to enterprise software and integration work, strengthening backend implementation and collaborative delivery practices."},
+    {"period":"AUG 2022 — JAN 2023","company":"Binary Div","role":"Software Engineer","location":"Karachi","summary":"Developed client-facing web products across frontend and backend concerns, from interface implementation to application logic."},
+    {"period":"JUN — AUG 2021","company":"Core2Plus","role":"Software Engineering Intern","location":"Karachi","summary":"Started professional practice through hands-on web development, team workflows and production-oriented software fundamentals."}
+  ],
+  "skills": [
+    {"label":"Core systems","items":"Java · Spring Boot · TypeScript · Node.js · NestJS · Python · Django · PostgreSQL · REST · GraphQL"},
+    {"label":"Product interfaces","items":"React · Next.js · Angular · Vue · accessible UI systems · real-time experiences"},
+    {"label":"Delivery & operations","items":"AWS · Docker · CI/CD · GitHub Actions · production operations · Sentry · monitoring"},
+    {"label":"Working knowledge","items":"Go · Rust · MongoDB · Kafka · Redis · RabbitMQ · Prisma · TypeORM · Liquibase · GCP · Azure · Kubernetes · Terraform"}
+  ]
+}

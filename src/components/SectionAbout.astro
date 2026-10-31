@@ -1,0 +1,12 @@
+---
+import data from "../data/portfolio.json";
+---
+<section class="section about" id="about" aria-labelledby="about-title">
+  <header class="section-head"><p class="eyebrow">About / 04</p><h2 id="about-title">Engineer, lead, <span>still curious.</span></h2></header>
+  <div class="about-grid">
+    <div class="about-intro frame-box"><p class="lead">I’m Muhammad Fahad Siddiqui, a Frankfurt-based full-stack engineer who likes understanding the complete system—not only the layer currently on fire.</p><p>I build product experiences, backend services and delivery infrastructure, and I’m increasingly applying LLM and retrieval patterns where they solve a real user problem. I care about calm execution, explicit trade-offs and software that stays operable.</p><div class="availability"><i></i><span>Available for full-time opportunities<br>and selected freelance engagements.</span></div></div>
+    <div class="skills">{data.skills.map((group,i)=><details class="frame-box" open={i===0}><summary><span class="mono">{String(i+1).padStart(2,"0")}</span>{group.label}<b>+</b></summary><p>{group.items}</p></details>)}</div>
+    <div class="education frame-box"><p class="mono">EDUCATION</p><article><time>2024—2026</time><h3>M.Sc. High Integrity Systems</h3><p>Frankfurt University of Applied Sciences · Thesis pending</p></article><article><time>2018—2023</time><h3>B.S. Software Engineering</h3><p>Sir Syed University</p></article></div>
+    <div class="languages frame-box"><p class="mono">LANGUAGES</p><p><span>English</span><b>IELTS 7.0</b></p><p><span>German</span><b>B1</b></p><p><span>Urdu</span><b>Native</b></p></div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+---
+import data from "../data/portfolio.json";
+---
+<section class="section capabilities" id="capabilities" aria-labelledby="cap-title" data-capability-root>
+  <header class="section-head"><p class="eyebrow">Capabilities / 02</p><h2 id="cap-title">Breadth with <span>depth.</span></h2><p>I work where product, architecture and operations meet—with depth in the core stack and deliberate range around it.</p></header>
+  <div class="cap-grid">
+    <div class="cap-control frame-box"><div class="cap-radar" aria-hidden="true"><i></i><i></i><i></i><span data-cap-signal>{data.capabilities[0].signal}</span></div></div>
+    <div class="cap-content frame-box">
+      <p class="mono">ACTIVE CAPABILITY</p><h3><span data-cap-title>{data.capabilities[0].title}</span><br><em data-cap-second>{data.capabilities[0].second}</em></h3><p data-cap-description>{data.capabilities[0].description}</p>
+      <div class="cap-tabs" role="tablist" aria-label="Capabilities">{data.capabilities.map((cap,i) => <button type="button" role="tab" aria-selected={i===0?"true":"false"} data-cap-tab={i}><b>{String(i+1).padStart(2,"0")}</b><span>{cap.title}</span></button>)}</div>
+    </div>
+  </div>
+  <script type="application/json" id="portfolio-capabilities" set:html={JSON.stringify(data.capabilities)}></script>
+</section>
